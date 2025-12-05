@@ -10,7 +10,7 @@ Ferramenta de linha de comando (CLI) desenvolvida para o processo seletivo ADA. 
 - **Resumo com LLM Local**: Integração com Hugging Face (Qwen2) para gerar resumos em português.
 
 ### Extras (Diferenciais)
-- **Otimização de GPU**: processamento em "chunks" (pedaços) para suportar PDFs gigantes sem estourar a VRAM (6GB).
+- **Otimização de GPU**: processamento em "chunks" (pedaços) para suportar PDFs gigantes sem estourar a VRAM.
 - **Logs e tratamento de arquivos**: Sistema de logging e tratamento de exceções para arquivos corrompidos ou inválidos.
 - **Relatório Unificado**: Geração de um arquivo `.md` final com todas as análises.
 
