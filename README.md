@@ -13,7 +13,7 @@ Ferramenta de linha de comando (CLI) desenvolvida para o processo seletivo ADA. 
 - **Otimização de GPU**: processamento em "chunks" (pedaços) para suportar PDFs gigantes sem estourar a VRAM (6GB).
 - **Logs e tratamento de arquivos**: Sistema de logging e tratamento de exceções para arquivos corrompidos ou inválidos.
 - **Relatório Unificado**: Geração de um arquivo `.md` final com todas as análises.
-- 
+
 ## 🛠️ Como rodar o projeto
 
 ### Pré-requisitos
@@ -24,8 +24,9 @@ Ferramenta de linha de comando (CLI) desenvolvida para o processo seletivo ADA. 
 
 1. Clone o repositório:
    ```bash
-   git clone <SEU_LINK_DO_GITHUB_AQUI>
+   git clone https://github.com/PatrickMatheus/Desafio-ADA.git
    cd desafio_ADA
+
 2. Crie e ative o ambiente virtual:
    ```bash
    python -m venv .venv
@@ -36,15 +37,30 @@ obs: As dependências já estão com a vesão com suporta a CUDA para uso de GPU
   ```bash
   pip install torch torchvision --index-url [https://download.pytorch.org/whl/cu121](https://download.pytorch.org/whl/cu121)
 ```
-##Uso
+## Uso
 1. Para executar o projeto:
    ```bash
-   python main.py seu_arquivo.pdf
-   Opcionalmente, se quiser um caminho de saída diferente:
+   python main.py seu_arquivo.pdF
+Opcionalmente, se quiser um caminho de saída diferente:
+   ```bash
    python main.py seu_arquivo.pdf --output sua_saida
+   ```
+```bash
    Exemplo: python main.py teste.pdf --output saida
+```
+
 2. Para ver as opções de ajuda:
    ```bash
    python main.py --help
+
+Para a avaliação eu gostaria que levassem em conta o tratamento de erros por log (Logger):
+O código foi feito para conseguir lidar com arquivos PDFs grandes, corrompidos, vazios e 
+interrupções manuais. Além da modularização do projeto, mostrando uma pequena separação de 
+responsabilidades (cli, llm, pdf, utils)
+
+
+Desenvolvido por Patrick Matheus Freitas de Lima
+
+
 
 
